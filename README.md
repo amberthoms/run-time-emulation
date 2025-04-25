@@ -2,7 +2,9 @@
 This repository contains the R code used to generate the Figures presented in my report, titled **"Incorporating Run Time into the Emulation of Expensive Computer Models, with Applications to Cosmological Simulations."**
 
 **Author**: Amber Thoms
+
 **Supervisor**: Professor Ian Vernon
+
 **Collaborator**: Dr Shaun Brown
 
 For any questions, feel free to contact me via **amber.s.thoms@durham.ac.uk**.
