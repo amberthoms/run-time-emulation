@@ -25,4 +25,4 @@ To recreate a Figure:
 2. Ensure any required data files are in the correct directory.
 3. Run the script.
 4. The output will be displayed in the plots plane.
-5. To save the output (in the dimensions shown in the report) uncomment the relevant png(file="???.png",width=???,height=???,res=???) and dev.off() lines and rerun the script.
+5. To save the output (in the dimensions shown in the report) uncomment the relevant png(file="___.png",width=___,height=___,res=___) and dev.off() lines and rerun the script.
