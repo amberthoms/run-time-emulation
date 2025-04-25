@@ -10,11 +10,11 @@ This repository contains the R code used to generate the Figures presented in my
 For any questions, feel free to contact me via **amber.s.thoms@durham.ac.uk**.
 
 ## Repository Structure
-Each R script corresponds to a specific Section in the report and is divided into segments to reproduce each Figure.
-In addition, there are two folders titled "Stellar_AGN_feedback_2D_v2" and "Stochasticity_tests".
-These folders contain the run locations, run times and halo catalogues for the EAGLE cosmological simulations performed by Dr Shaun Brown.
-"Stellar_AGN_feedback_2D_v2" contains information about the evaluations of the Orthogonal Latin Hypercube and Wave 2 design (and additional run for completion). 
-"Stochasticity_tests" contains information about the stochastic repetitions of a central point x1=x2=0.48698 which has been rerun 10 times.
+Each R script corresponds to a specific Section in the report and is divided into segments to reproduce each Figure.<br/>
+In addition, there are two folders titled "Stellar_AGN_feedback_2D_v2" and "Stochasticity_tests".<br/>
+These folders contain the run locations, run times and halo catalogues for the EAGLE cosmological simulations performed by Dr Shaun Brown.<br/>
+"Stellar_AGN_feedback_2D_v2" contains information about the evaluations of the Orthogonal Latin Hypercube and Wave 2 design (and additional run for completion). <br/>
+"Stochasticity_tests" contains information about the stochastic repetitions of a central point x1=x2=0.48698 which has been rerun 10 times.<br/>
 
 These scripts were developed using **R version 4.4.3 (2025-02-28) – "Trophy Case"**.
 
