@@ -199,6 +199,46 @@ ggplot(data, aes(x=x_for_all)) +
 
 
 
+#redone with units of axis
+
+#png(file="supernew_stellar_plot.png",width=1760,height=1320,res=200)
+
+ggplot(data, aes(x=x_for_all)) +
+  geom_line(aes(y=run0, colour = "run 0")) +
+  geom_line(aes(y=run1, colour = "run 1")) +
+  geom_line(aes(y=run2, colour = "run 2")) +
+  geom_line(aes(y=run3, colour = "run 3")) +
+  geom_line(aes(y=run4, colour = "run 4")) +
+  geom_line(aes(y=run5, colour = "run 5")) +
+  geom_line(aes(y=run6, colour = "run 6")) +
+  geom_line(aes(y=run7, colour = "run 7")) +
+  geom_line(aes(y=run8, colour = "run 8")) +
+  geom_line(data=observed,aes(x=observed_data_matrix_x,y=observed_data_matrix_y, colour = "observed")) +
+  ggtitle("Volume Averaged log Stellar Mass Functions") +
+  xlab(expression("log Galaxy Mass [M"[ʘ]*"]")) +
+  ylab(expression("log Galaxy Counts ["*dex^{-1}~Mpc^{-3}*"]")) +
+  scale_y_continuous(trans='log10') +
+  #xlim(8.5,12) +
+  geom_errorbar(data=observed, 
+                aes(x=observed_data_matrix_x,ymin=pmax(observed_data_matrix_y - 2*errors, 0), ymax=observed_data_matrix_y+2*errors), 
+                width=.05,
+                position=position_dodge(0.05),
+                color = "black") +
+  geom_point(data=observed, 
+             aes(x=observed_data_matrix_x,y=observed_data_matrix_y),
+             color = "black")+
+  geom_errorbar(data=myerrors, 
+                aes(x=x_bins,ymin=y_vals-2*my_errors, ymax=y_vals+2*my_errors), 
+                width=.05,
+                position=position_dodge(0.05),
+                color = "brown") +
+  coord_cartesian(xlim =c(8.5, 12),ylim=c(0.00001,NA))+
+  scale_colour_manual("", 
+                      breaks = c("observed","run 0","run 1","run 2","run 3","run 4","run 5","run 6","run 7","run 8"),
+                      values = c("observed"="black","run 0"="red","run 1"="orange","run 2"="gold","run 3"="green","run 4"="skyblue1","run 5"="royalblue3","run 6"="purple","run 7"="hotpink","run 8"="pink"))
+
+
+#dev.off()
 
 
 
